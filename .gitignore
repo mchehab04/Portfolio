@@ -1,0 +1,7 @@
+CV_long.docx
+GEMINI.md
+
+# Editor & OS artifacts
+.vscode/
+.DS_Store
+Thumbs.db
