@@ -2,7 +2,8 @@
 
 A sleek, responsive personal portfolio website showcasing projects in **Full-Stack Development**, **Machine Learning & Data Science**, and **Robotics & Industrial Automation**.
 
-Live GitHub Repository: [https://github.com/mchehab04/Portfolio](https://github.com/mchehab04/Portfolio)
+🌐 **Live Website:** [https://mohamad-chehab-portfolio.vercel.app](https://mohamad-chehab-portfolio.vercel.app/)  
+💻 **GitHub Repository:** [https://github.com/mchehab04/Portfolio](https://github.com/mchehab04/Portfolio)
 
 ---
 
