@@ -30,7 +30,7 @@ Live GitHub Repository: [https://github.com/mchehab04/Portfolio](https://github.
 |---|---|---|
 | **[Dina's Studio](https://dinasstudio.com)** | Full-Stack Web | HTML5, JavaScript, Supabase, Netlify Functions, Resend API |
 | **F1 Predictive Modeling & Race Analytics** | Data Science & ML | Python, FastF1, LightGBM, Scikit-Learn, Causal DAGs, SHAP |
-| **SME Business Automation Platform** | Enterprise SaaS | Next.js, TypeScript, PostgreSQL, Prisma ORM, Claude API |
+| **[SME Business Automation Platform](https://automation-tool-larp.vercel.app/dashboard)** | Enterprise SaaS | Next.js, TypeScript, PostgreSQL, Prisma ORM, Claude API |
 | **UAE e-Invoicing Compliance Scanner** | RegTech & Auditing | Python, Pandas, PINT-AE, Pytest |
 | **Biomarker Age Gap Residual Modeling** | Healthcare Data Science | Python, Scikit-Learn, Pandas, NumPy, Matplotlib |
 | **Hermes Autonomous Personal Assistant** | Autonomous AI Agents | Python, Discord API, Google Calendar API, MS Graph |
@@ -39,25 +39,6 @@ Live GitHub Repository: [https://github.com/mchehab04/Portfolio](https://github.
 | **Dubai Airbnb Statistical Analysis** | Predictive Modeling | Python, Minitab, Regression Diagnostics |
 | **PLC Material Sorting System** | Industrial Automation | Siemens SIMATIC S7-300, PROFIBUS, PROFINET |
 | **Fuzzy Logic Thermal Control** | Control Systems | LabVIEW, 128-Rule Fuzzy Inference |
-
----
-
-## 💻 Local Setup & Preview
-
-No build tools or package managers required. Simply clone and open:
-
-```bash
-# Clone the repository
-git clone https://github.com/mchehab04/Portfolio.git
-
-# Navigate into the project folder
-cd Portfolio
-
-# Open directly in your browser or run a local server:
-python -m http.server 8000
-```
-
-Then navigate to `http://localhost:8000` in your web browser.
 
 ---
 
