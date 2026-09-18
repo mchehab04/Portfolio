@@ -432,6 +432,24 @@ main {
     transform: translateY(0);
 }
 
+
+/* Interests Grid */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.interest-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
@@ -440,7 +458,8 @@ main {
     .hero-content h1 {
         font-size: 3rem;
     }
-    .skills-container {
+    .skills-container,
+    .interests-grid {
         grid-template-columns: 1fr;
     }
 }
