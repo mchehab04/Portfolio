@@ -65,5 +65,67 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-});
 
+    // Mobile Sidebar Navigation
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    function openSidebar() {
+        if (!mobileSidebar || !sidebarOverlay) return;
+        mobileSidebar.classList.add('open');
+        sidebarOverlay.classList.add('active');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.classList.add('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        }
+        sidebarOverlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSidebar() {
+        if (!mobileSidebar || !sidebarOverlay) return;
+        mobileSidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+        sidebarOverlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+            if (mobileSidebar && mobileSidebar.classList.contains('open')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        });
+    }
+
+    if (closeSidebarBtn) {
+        closeSidebarBtn.addEventListener('click', closeSidebar);
+    }
+
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', closeSidebar);
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileSidebar && mobileSidebar.classList.contains('open')) {
+            closeSidebar();
+        }
+    });
+
+    // Close sidebar when clicking any link inside the mobile drawer
+    document.querySelectorAll('.mobile-nav-links a, .sidebar-cta-btn').forEach(link => {
+        link.addEventListener('click', () => {
+            closeSidebar();
+        });
+    });
+
+});
